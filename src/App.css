@@ -1,0 +1,160 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+nav {
+  background-color: #222; /* Choisissez la couleur de fond que vous aimez */
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  margin: 0;
+}
+
+NavLink {
+  text-decoration: none;
+  color: #fff; /* Couleur du texte blanc */
+  font-weight: bold;
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+NavLink:hover {
+  color: #ffcc00; /* Couleur du texte jaune au survol */
+}
+.film-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  padding: 20px;
+}
+
+/* Style de chaque film dans la liste */
+.film {
+  width: 300px;
+  margin: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.film:hover {
+  transform: scale(1.05);
+}
+
+/* Style du titre du film */
+.film h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Style de la description du film */
+.film p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Style de l'image du film */
+.film img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.details-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style du titre du film */
+.details-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Style de la description du film */
+.details-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Style du rating du film */
+.details-rating {
+  font-size: 1.5rem;
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+/* Style du lien du trailer */
+.details-trailer {
+  font-size: 1.2rem;
+  color: #0077cc;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.details-trailer:hover {
+  text-decoration: underline;
+}
+
+/* Style du lien de retour à la liste */
+.details-back-link {
+  font-size: 1rem;
+  color: #0077cc;
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+}
+
+.details-back-link:hover {
+  text-decoration: underline;
+}
